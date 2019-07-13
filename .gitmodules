@@ -1,0 +1,3 @@
+[submodule "themes/diaspora"]
+	path = themes/diaspora
+	url = git@kjxbyz.github.com:kjxbyz/hexo-theme-diaspora.git
