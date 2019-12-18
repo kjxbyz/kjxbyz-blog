@@ -5,7 +5,6 @@ node_js:
 cache:
   directories:
     - node_modules
-    - .deploy_git
 
 branches:
   only:
@@ -19,10 +18,24 @@ install:
 
 script:
   - hexo clean && hexo g && gulp
+  - cd ./public && touch CNAME && echo 'kjxbyz.com' > CNAME && cd ..
 
-after_script:
-  - git config --global user.name "kjxbyz"
-  - git config --global user.email "kjxbyz@163.com"
-  - sed -i "s/github_token/${GITHUB_TOKEN}/g" ./_config.yml
-  - cat ./_config.yml
-  - hexo deploy
+deploy:
+  provider: pages
+  repo: kjxbyz/kjxbyz.github.io
+  target_branch: master
+  email: kjxbyz@163.com
+  name: kjxbyz
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+  local_dir: public
+
+#after_script:
+#  - git config --global user.name "kjxbyz"
+#  - git config --global user.email "kjxbyz@163.com"
+#  - sed -i "s/github_token/${GITHUB_TOKEN}/g" ./_config.yml
+#  - cat ./_config.yml
+#  - hexo deploy
