@@ -81,6 +81,5 @@ theme: diaspora
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/kjxbyz/kjxbyz.github.io.git
+  repo: https://kjxbyz:github_token@github.com/kjxbyz/kjxbyz.github.io.git
   branch: dev
-  token: github_token
