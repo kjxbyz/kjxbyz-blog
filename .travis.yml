@@ -1,0 +1,27 @@
+language: node_js
+sudo: required
+node_js:
+  - 10
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+
+before_install:
+  - yarn global add hexo-cli
+
+install:
+  - yarn install
+
+script:
+  - hexo clean && hexo g && gulp
+
+after_script:
+  - git config --global user.name "kjxbyz"
+  - git config --global user.email "kjxbyz@163.com"
+  - sed -i "s/github_token/${GITHUB_TOKEN}/g" ./_config.yml
+  - cat ./_config.yml
+  - hexo deploy

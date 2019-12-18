@@ -1,6 +1,4 @@
 # Blog
 
+![Travis (.org)](https://img.shields.io/travis/chenyifaerfans/fafaer-blog)
 
-```text
-hexo clean && hexo g && gulp && hexo d
-```
