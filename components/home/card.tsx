@@ -15,10 +15,15 @@ export default function Card({
   description: string;
   demo: ReactNode;
   url: string;
-  large?: boolean,
+  large?: boolean;
 }) {
   return (
-    <Link href={url} target="_blank" rel="noreferrer" className={large ? "md:col-span-2" : ""}>
+    <Link
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      className={large ? "md:col-span-2" : ""}
+    >
       <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white hover:shadow-md">
         <div className="flex h-60 items-center justify-center">{demo}</div>
         <div className="mx-auto max-w-md text-center">
