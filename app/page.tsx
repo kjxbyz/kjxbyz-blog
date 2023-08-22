@@ -66,7 +66,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
         {features.map(({ title, description, demo, url, large }) => (
           <DynamicCard
             key={title}
@@ -88,7 +88,7 @@ const features = [
     description: "An unofficial YouTube music desktop client.",
     demo: <FiMusic className="h-24 w-24 text-gray-600 transition-all" />,
     url: "https://kjxbyz.com/ytmusic",
-    large: true,
+    large: false,
   },
   {
     title: "Viber",
@@ -107,6 +107,6 @@ const features = [
     description: "A video application for managing videos on Synology NAS.",
     demo: <FiVideo className="h-24 w-24 text-gray-600 transition-all" />,
     url: "https://kjxbyz.com/dsvideo",
-    large: true,
+    large: false,
   },
 ];
