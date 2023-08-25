@@ -148,7 +148,7 @@ const features = [
     title: "Tauri Test",
     description: "Tauri Test",
     demo: <SiTauri className="h-24 w-24 text-gray-600 transition-all" />,
-    url: "https://www.kjxbyz.com/tauri-test",
+    url: "https://github.com/kjxbyz/tauri-test",
     large: false,
   },
 ];
