@@ -2,7 +2,7 @@
 import Balancer from "react-wrap-balancer";
 import { RoughNotation } from "react-rough-notation";
 import { Github } from "@/components/shared/icons";
-import { SiViber, SiNextdotjs, SiNuxtdotjs } from "react-icons/si";
+import { SiViber, SiNextdotjs, SiNuxtdotjs, SiTauri } from "react-icons/si";
 import { FiMusic, FiVideo } from "react-icons/fi";
 import { AiOutlineAudio } from "react-icons/ai";
 import Image from "next/image";
@@ -142,6 +142,13 @@ const features = [
     description: "Nuxt Test",
     demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all" />,
     url: "https://www.kjxbyz.com/nuxt-test",
+    large: false,
+  },
+  {
+    title: "Tauri Test",
+    description: "Tauri Test",
+    demo: <SiTauri className="h-24 w-24 text-gray-600 transition-all" />,
+    url: "https://www.kjxbyz.com/tauri-test",
     large: false,
   },
 ];
