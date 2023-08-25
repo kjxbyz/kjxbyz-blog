@@ -2,7 +2,7 @@
 import Balancer from "react-wrap-balancer";
 import { RoughNotation } from "react-rough-notation";
 import { Github } from "@/components/shared/icons";
-import { SiViber } from "react-icons/si";
+import { SiViber, SiNextdotjs, SiNuxtdotjs } from "react-icons/si";
 import { FiMusic, FiVideo } from "react-icons/fi";
 import { AiOutlineAudio } from "react-icons/ai";
 import Image from "next/image";
@@ -107,6 +107,41 @@ const features = [
     description: "A video application for managing videos on Synology NAS.",
     demo: <FiVideo className="h-24 w-24 text-gray-600 transition-all" />,
     url: "https://kjxbyz.com/dsvideo",
+    large: false,
+  },
+  {
+    title: "Next Starter",
+    description: "Next Starter",
+    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    url: "https://www.kjxbyz.com/starter/next",
+    large: false,
+  },
+  {
+    title: "Nuxt Starter",
+    description: "Nuxt Starter",
+    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    url: "https://www.kjxbyz.com/starter/nuxt",
+    large: false,
+  },
+  {
+    title: "Next Admin Starter",
+    description: "Next Admin Starter",
+    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    url: "https://www.kjxbyz.com/starter/next/admin",
+    large: false,
+  },
+  {
+    title: "Nuxt Admin Starter",
+    description: "Nuxt Admin Starter",
+    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    url: "https://www.kjxbyz.com/starter/nuxt/admin",
+    large: false,
+  },
+  {
+    title: "Nuxt Test",
+    description: "Nuxt Test",
+    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    url: "https://www.kjxbyz.com/nuxt-test",
     large: false,
   },
 ];
