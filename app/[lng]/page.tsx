@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
         <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up dark:bg-gradient-to-br dark:from-white dark:to-stone-500 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>科技小白英仔</Balancer>
@@ -86,68 +86,68 @@ const features = [
   {
     title: "YTMusic",
     description: "An unofficial YouTube music desktop client.",
-    demo: <FiMusic className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <FiMusic className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://kjxbyz.com/ytmusic",
     large: false,
   },
   {
     title: "Viber",
     description: "A social application that supports web, desktop and mobile.",
-    demo: <SiViber className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <SiViber className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://kjxbyz.com/viber",
   },
   {
     title: "DS Audio",
     description: "A music application for managing music on Synology NAS.",
-    demo: <AiOutlineAudio className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <AiOutlineAudio className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://kjxbyz.com/dsaudio",
   },
   {
     title: "DS Video",
     description: "A video application for managing videos on Synology NAS.",
-    demo: <FiVideo className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <FiVideo className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://kjxbyz.com/dsvideo",
     large: false,
   },
   {
     title: "Next Starter",
     description: "Next Starter",
-    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://www.kjxbyz.com/starter/next",
     large: false,
   },
   {
     title: "Nuxt Starter",
     description: "Nuxt Starter",
-    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://www.kjxbyz.com/starter/nuxt",
     large: false,
   },
   {
     title: "Next Admin Starter",
     description: "Next Admin Starter",
-    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://www.kjxbyz.com/starter/next/admin",
     large: false,
   },
   {
     title: "Nuxt Admin Starter",
     description: "Nuxt Admin Starter",
-    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://www.kjxbyz.com/starter/nuxt/admin",
     large: false,
   },
   {
     title: "Nuxt Test",
     description: "Nuxt Test",
-    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://www.kjxbyz.com/nuxt-test",
     large: false,
   },
   {
     title: "Tauri Test",
     description: "Tauri Test",
-    demo: <SiTauri className="h-24 w-24 text-gray-600 transition-all" />,
+    demo: <SiTauri className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
     url: "https://github.com/kjxbyz/tauri-test",
     large: false,
   },
