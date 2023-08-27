@@ -10,12 +10,12 @@ export const config = {
   // matcher: '/:lng*'
   matcher: [
     "/((?!api|_next/static|_next/image|images|videos|assets|favicon.ico|logo.jpg|sw.js).*)",
-    // { source: "/" },
+    { source: "/" },
   ],
 };
 
 const cookieName: string = cacheLngKey;
-const basePath: string = "";
+const basePath: string = "/blog";
 const getPath = (lng: string) => `${basePath}/${lng}`;
 
 export function middleware(req: NextRequest) {
