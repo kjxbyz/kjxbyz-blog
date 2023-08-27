@@ -1,6 +1,6 @@
-on:
-  push:
-    branches: [ "main" ]
+#on:
+#  push:
+#    branches: [ "main" ]
 
 name: Build and Release Web
 jobs:

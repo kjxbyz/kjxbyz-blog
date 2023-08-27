@@ -24,13 +24,13 @@ export default function Card({
       rel="noreferrer"
       className={large ? "md:col-span-2" : ""}
     >
-      <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white hover:shadow-md">
+      <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-400 bg-white dark:bg-gray-700 hover:shadow-md">
         <div className="flex h-60 items-center justify-center">{demo}</div>
         <div className="mx-auto max-w-md text-center">
-          <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
+          <h2 className="bg-gradient-to-br from-black to-stone-500 dark:bg-gradient-to-br dark:from-white dark:to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
             <Balancer>{title}</Balancer>
           </h2>
-          <div className="prose-sm -mt-2 leading-normal text-gray-500 md:prose">
+          <div className="prose-sm -mt-2 leading-normal text-gray-500 dark:text-white md:prose">
             <Balancer>
               <ReactMarkdown
                 components={{
