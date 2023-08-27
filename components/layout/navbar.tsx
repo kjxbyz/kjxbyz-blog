@@ -3,8 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import useScroll from "@/lib/hooks/use-scroll";
+import LngDropdown from "./lng-dropdown";
+import ThemeDropdown from "./theme-dropdown";
+import { LngProps } from "@/i18next-lng";
 
-export default function NavBar() {
+export default function NavBar(props: LngProps) {
   const scrolled = useScroll(50);
 
   return (
@@ -16,7 +19,10 @@ export default function NavBar() {
       } z-30 transition-all`}
     >
       <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-        <Link href="/" className="flex items-center font-display text-2xl">
+        <Link
+          href={`/${props.lng}`}
+          className="flex items-center font-display text-2xl"
+        >
           <Image
             src="/logo.jpg"
             alt="logo"
@@ -26,6 +32,10 @@ export default function NavBar() {
           ></Image>
           <p>KJXBYZ</p>
         </Link>
+        <div>
+          <LngDropdown lng={props.lng} />
+          <ThemeDropdown lng={props.lng} />
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,15 @@
-import Image from "next/image";
+"use client";
 
-export default function Footer() {
+import Image from "next/image";
+import { LngProps } from "@/i18next-lng";
+import { useTranslation } from "@/i18n/client";
+
+export default function Footer(props: LngProps) {
+  const { t } = useTranslation(props.lng, "footer");
   return (
     <div className="absolute w-full border-b border-gray-200 py-5 text-center">
-      <p className="text-gray-500">
-        Source code hosted on{" "}
+      <p className="text-gray-500 dark:text-black">
+        {t("footer")}{" "}
         <a
           className="font-medium text-gray-800 underline transition-colors"
           href="https://github.com/kjxbyz/kjxbyz.github.io"
