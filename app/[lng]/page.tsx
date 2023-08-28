@@ -7,12 +7,20 @@ import { FiMusic, FiVideo } from "react-icons/fi";
 import { AiOutlineAudio } from "react-icons/ai";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { useTranslation } from "@/i18n/client";
 
 const DynamicCard = dynamic(() => import("@/components/home/card"), {
   ssr: false,
 });
 
-export default function Home() {
+export default function Home({
+  params,
+}: {
+  params: {
+    lng: string;
+  };
+}) {
+  const { t } = useTranslation(params.lng, "header");
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
@@ -26,10 +34,10 @@ export default function Home() {
           />
         </div>
         <h1
-          className="animate-fade-up dark:bg-gradient-to-br dark:from-white dark:to-stone-500 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-black/80 opacity-0 drop-shadow-sm dark:text-white/80 md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          <Balancer>科技小白英仔</Balancer>
+          <Balancer>{t("title")}</Balancer>
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-red-400 opacity-0 md:text-xl"
@@ -54,7 +62,7 @@ export default function Home() {
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
           <a
-            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800 dark:bg-black dark:text-white/80"
             href="https://github.com/kjxbyz"
             target="_blank"
             rel="noopener noreferrer"
@@ -86,68 +94,88 @@ const features = [
   {
     title: "YTMusic",
     description: "An unofficial YouTube music desktop client.",
-    demo: <FiMusic className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <FiMusic className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://kjxbyz.com/ytmusic",
     large: false,
   },
   {
     title: "Viber",
     description: "A social application that supports web, desktop and mobile.",
-    demo: <SiViber className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <SiViber className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://kjxbyz.com/viber",
   },
   {
     title: "DS Audio",
     description: "A music application for managing music on Synology NAS.",
-    demo: <AiOutlineAudio className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <AiOutlineAudio className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://kjxbyz.com/dsaudio",
   },
   {
     title: "DS Video",
     description: "A video application for managing videos on Synology NAS.",
-    demo: <FiVideo className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <FiVideo className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://kjxbyz.com/dsvideo",
     large: false,
   },
   {
     title: "Next Starter",
     description: "Next Starter",
-    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://www.kjxbyz.com/starter/next",
     large: false,
   },
   {
     title: "Nuxt Starter",
     description: "Nuxt Starter",
-    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://www.kjxbyz.com/starter/nuxt",
     large: false,
   },
   {
     title: "Next Admin Starter",
     description: "Next Admin Starter",
-    demo: <SiNextdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://www.kjxbyz.com/starter/next/admin",
     large: false,
   },
   {
     title: "Nuxt Admin Starter",
     description: "Nuxt Admin Starter",
-    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://www.kjxbyz.com/starter/nuxt/admin",
     large: false,
   },
   {
     title: "Nuxt Test",
     description: "Nuxt Test",
-    demo: <SiNuxtdotjs className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://www.kjxbyz.com/nuxt-test",
     large: false,
   },
   {
     title: "Tauri Test",
     description: "Tauri Test",
-    demo: <SiTauri className="h-24 w-24 text-gray-600 dark:text-white transition-all" />,
+    demo: (
+      <SiTauri className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+    ),
     url: "https://github.com/kjxbyz/tauri-test",
     large: false,
   },
