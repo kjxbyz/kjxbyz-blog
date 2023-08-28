@@ -32,7 +32,7 @@ export default async function RootLayout({
     <html lang={params.lng} dir={dir(params.lng)} suppressHydrationWarning>
       <body className={cx(sfPro.variable, inter.variable)}>
         <Providers>
-          <div className="fixed h-screen w-full dark:bg-gradient-to-br dark:from-indigo-50 dark:via-gray-900 dark:to-cyan-100 bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+          <div className="fixed h-screen w-full bg-cyan-50 dark:bg-black" />
           <Suspense fallback="...">
             {/* @ts-ignore */}
             <Nav lng={params.lng} />
