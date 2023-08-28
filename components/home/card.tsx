@@ -39,7 +39,7 @@ export default function Card({
                       target="_blank"
                       rel="noopener noreferrer"
                       {...props}
-                      className="font-medium text-gray-800 underline transition-colors"
+                      className="font-medium text-gray-800 dark:text-gray-200 underline transition-colors"
                     />
                   ),
                   code: ({ node, ...props }) => (
