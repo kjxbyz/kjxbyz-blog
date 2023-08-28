@@ -7,11 +7,11 @@ import { useTranslation } from "@/i18n/client";
 export default function Footer(props: LngProps) {
   const { t } = useTranslation(props.lng, "footer");
   return (
-    <div className="absolute w-full border-b border-gray-200 py-5 text-center">
-      <p className="text-gray-500 dark:text-black">
+    <div className="absolute w-full py-5 text-center">
+      <p className="text-gray-500 dark:text-white/80">
         {t("footer")}{" "}
         <a
-          className="font-medium text-gray-800 underline transition-colors"
+          className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
           href="https://github.com/kjxbyz/kjxbyz.github.io"
           target="_blank"
           rel="noopener noreferrer"
