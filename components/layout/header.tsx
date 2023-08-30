@@ -8,7 +8,7 @@ import ThemeDropdown from "./theme-dropdown";
 import { LngProps } from "@/i18next-lng";
 import { useTranslation } from "@/i18n/client";
 
-export default function NavBar(props: LngProps) {
+export default function Header(props: LngProps) {
   const { t } = useTranslation(props.lng, "header");
   const scrolled = useScroll(50);
 
