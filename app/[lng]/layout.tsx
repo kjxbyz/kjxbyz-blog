@@ -1,12 +1,13 @@
 import "./globals.css";
 import cx from "classnames";
 import { sfPro, inter } from "./fonts";
-import Nav from "@/components/layout/nav";
 import Footer from "@/components/layout/footer";
 import { dir } from "i18next";
-import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import { languages } from "@/i18n/settings";
 import { Providers } from "./providers";
+
+const Header = dynamic(() => import("@/components/layout/header"), { ssr: false });
 
 export const metadata = {
   title: "kjxbyz",
@@ -33,10 +34,7 @@ export default async function RootLayout({
       <body className={cx(sfPro.variable, inter.variable)}>
         <Providers>
           <div className="fixed h-screen w-full bg-cyan-50 dark:bg-black" />
-          <Suspense fallback="...">
-            {/* @ts-ignore */}
-            <Nav lng={params.lng} />
-          </Suspense>
+          <Header lng={params.lng} />
           <main
             id="main"
             className="flex min-h-screen w-full flex-col items-center justify-center py-32"
