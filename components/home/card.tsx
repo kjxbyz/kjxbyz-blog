@@ -24,7 +24,7 @@ export default function Card({
       rel="noreferrer"
       className={large ? "md:col-span-2" : ""}
     >
-      <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white hover:shadow-md dark:hover:shadow-gray-700 dark:bg-gray-900">
+      <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white hover:shadow-md dark:border-gray-700 dark:bg-gray-900 dark:hover:shadow-gray-700">
         <div className="flex h-60 items-center justify-center">{demo}</div>
         <div className="mx-auto max-w-md text-center">
           <h2 className="bg-clip-text font-display text-xl font-bold text-black/80 dark:text-white/80 md:text-3xl md:font-normal">
@@ -39,7 +39,7 @@ export default function Card({
                       target="_blank"
                       rel="noopener noreferrer"
                       {...props}
-                      className="font-medium text-gray-800 dark:text-gray-200 underline transition-colors"
+                      className="font-medium text-gray-800 underline transition-colors dark:text-gray-200"
                     />
                   ),
                   code: ({ node, ...props }) => (
@@ -47,7 +47,7 @@ export default function Card({
                       {...props}
                       // @ts-ignore (to fix "Received `true` for a non-boolean attribute `inline`." warning)
                       inline="true"
-                      className="rounded-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 font-mono font-medium text-gray-800"
+                      className="rounded-sm bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800 dark:bg-gray-700"
                     />
                   ),
                 }}

@@ -7,7 +7,9 @@ import dynamic from "next/dynamic";
 import { languages } from "@/i18n/settings";
 import { Providers } from "./providers";
 
-const Header = dynamic(() => import("@/components/layout/header"), { ssr: false });
+const Header = dynamic(() => import("@/components/layout/header"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "kjxbyz",
