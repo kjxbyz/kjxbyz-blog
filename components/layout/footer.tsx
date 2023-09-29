@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { LngProps } from "@/i18next-lng";
 import { useTranslation } from "@/i18n/client";
 
@@ -18,6 +19,25 @@ export default function Footer(props: LngProps) {
         >
           GitHub
         </a>
+      </p>
+      <p className="mt-2 flex items-center justify-center">
+        <Link
+          className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
+          href={`/${props.lng}/legal/privacy`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("privacy")}
+        </Link>
+        &nbsp;&nbsp;
+        <Link
+          className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
+          href={`/${props.lng}/legal/terms-of-use`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("terms-of-use")}
+        </Link>
       </p>
       <p className="mt-2 flex items-center justify-center">
         <Image
