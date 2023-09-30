@@ -5,9 +5,12 @@ import { Github } from "@/components/shared/icons";
 import { SiViber, SiNextdotjs, SiNuxtdotjs, SiTauri } from "react-icons/si";
 import { FiMusic, FiVideo } from "react-icons/fi";
 import { AiOutlineAudio } from "react-icons/ai";
+import { FaBlog } from "react-icons/fa";
+import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useTranslation } from "@/i18n/client";
+import { allPosts } from "contentlayer/generated";
 
 const DynamicCard = dynamic(() => import("@/components/home/card"), {
   ssr: false,
@@ -21,9 +24,23 @@ export default function Home({
   };
 }) {
   const { t } = useTranslation(params.lng, "header");
+  const post = allPosts
+    .filter((post) => post.slug.startsWith(`${params.lng}/blog`))
+    .at(0);
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+        {post && (
+          <Link
+            href={`/${post.slug}`}
+            target="_blank"
+            rel="noreferrer"
+            className="mx-auto mb-12 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+          >
+            <FaBlog className="h-5 w-5 text-[#1d9bf0]" />
+            <p className="text-sm font-semibold text-[#1d9bf0]">{post.title}</p>
+          </Link>
+        )}
         <div className="mb-8 flex items-center justify-center space-x-20">
           <Image
             className="rounded-full"
