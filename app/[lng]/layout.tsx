@@ -23,8 +23,8 @@ export async function generateMetadata({
     metadataBase: new URL("https://kjxbyz.com"),
     themeColor: "#FFF",
     icons: {
-      icon: "/blog/logo.jpg"
-    }
+      icon: "/blog/logo.jpg",
+    },
   };
 }
 
