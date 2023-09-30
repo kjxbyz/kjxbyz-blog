@@ -58,7 +58,7 @@ export default async function Legal({
             <PostNav />
 
             {/* Main content */}
-            <div>
+            <div className="flex-1">
               {/* Article meta */}
               <div className="mb-6 flex items-center">
                 {post.authorImg && (
