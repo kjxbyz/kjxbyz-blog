@@ -1,9 +1,10 @@
 import "./globals.css";
 import cx from "classnames";
 import { sfPro, inter } from "./fonts";
-import Footer from "@/components/layout/footer";
 import { dir } from "i18next";
+import { Metadata } from "next";
 import dynamic from "next/dynamic";
+import Footer from "@/components/layout/footer";
 import { languages } from "@/i18n/settings";
 import { Providers } from "./providers";
 
@@ -11,12 +12,21 @@ const Header = dynamic(() => import("@/components/layout/header"), {
   ssr: false,
 });
 
-export const metadata = {
-  title: "kjxbyz",
-  description: "科技小白英仔.",
-  metadataBase: new URL("https://kjxbyz.com"),
-  themeColor: "#FFF",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { lng: string };
+}): Promise<Metadata | undefined> {
+  return {
+    title: params.lng === "en" ? "kjxbyz" : "科技小白英仔",
+    description: params.lng === "en" ? "KJXBYZ" : "科技小白英仔.",
+    metadataBase: new URL("https://kjxbyz.com"),
+    themeColor: "#FFF",
+    icons: {
+      icon: "/blog/logo.jpg"
+    }
+  };
+}
 
 export async function generateStaticParams() {
   return languages.map((lng: string) => ({ lng }));
