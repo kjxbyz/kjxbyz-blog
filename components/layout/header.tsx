@@ -26,7 +26,7 @@ export default function Header(props: LngProps) {
           className="flex items-center font-display text-2xl"
         >
           <Image
-            src="/blog/logo.jpg"
+            src="/portal/logo.jpg"
             alt="logo"
             width="30"
             height="30"
