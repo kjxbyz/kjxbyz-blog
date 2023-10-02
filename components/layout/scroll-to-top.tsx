@@ -50,7 +50,7 @@ const ScrollToTop = ({
     <>
       {visible && (
         <button
-          className={`bg-gray-100 dark:bg-gray-400 text-center fixed right-[40px] bottom-[40px] z-2 cursor-pointer w-[40px] h-[40px] border-none rounded-[7px] shadow-[0_9px_25px_0px_rgba(132, 128, 177, 0.28)] ${className}`}
+          className={`bg-gray-100 dark:bg-gray-400 text-center fixed right-[20px] bottom-[40px] z-2 cursor-pointer w-[40px] h-[40px] border-none rounded-[7px] shadow-[0_9px_25px_0px_rgba(132, 128, 177, 0.28)] ${className}`}
           onClick={() => scrollToTop(smooth)}
           aria-label="Scroll to top"
           // eslint-disable-next-line react/jsx-props-no-spreading
