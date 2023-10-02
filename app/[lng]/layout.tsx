@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import NextTopLoader from "nextjs-toploader";
 import { BiArrowToTop } from "react-icons/bi";
+import { Analytics } from "@vercel/analytics/react";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import Footer from "@/components/layout/footer";
 import { languages } from "@/i18n/settings";
@@ -56,6 +57,7 @@ export default async function RootLayout({
             className="flex min-h-screen w-full flex-col items-center justify-center py-32"
           >
             {children}
+            <Analytics />
           </main>
           <Footer lng={params.lng} />
         </Providers>
