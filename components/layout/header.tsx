@@ -12,6 +12,12 @@ export default function Header(props: LngProps) {
   const { t } = useTranslation(props.lng, "header");
   const scrolled = useScroll(50);
 
+  // toggle menu
+  const toggleMenu = () => {
+    const $navbar = document.querySelector("#navbar-language");
+    $navbar?.classList.toggle("hidden");
+  };
+
   return (
     <div
       className={`fixed top-0 w-full ${
@@ -34,10 +40,42 @@ export default function Header(props: LngProps) {
           ></Image>
           <p>{t("title")}</p>
         </Link>
-        <div>
-          <LngDropdown lng={props.lng} />
-          <ThemeDropdown lng={props.lng} />
+        <div
+          className="w-18 hidden items-center justify-between max-md:absolute max-md:right-5 max-md:top-16 md:order-1 md:flex md:w-auto"
+          id="navbar-language"
+        >
+          <ul className="flex flex-col rounded-lg border border-gray-100 p-4 font-medium dark:border-gray-700 md:mt-0 md:flex-row md:space-x-0 md:border-0 md:p-0">
+            <li className="h-8 w-8 sm:h-9 sm:w-9">
+              <LngDropdown lng={props.lng} />
+            </li>
+            <li className="h-8 w-8 sm:h-9 sm:w-9">
+              <ThemeDropdown lng={props.lng} />
+            </li>
+          </ul>
         </div>
+        <button
+          onClick={toggleMenu}
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          aria-controls="navbar-language"
+          aria-expanded="false"
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="h-5 w-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   );
