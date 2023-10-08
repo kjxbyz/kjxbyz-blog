@@ -22,7 +22,7 @@ export default function ThemeDropdown(props: LngProps) {
     <div className="relative inline-block text-left">
       <Popover
         content={
-          <div className="w-full rounded-md bg-white p-2 dark:bg-black min-w-[14rem]">
+          <div className="w-full min-w-[14rem] rounded-md bg-white p-2 dark:bg-black">
             {themes.map((t: Theme) => {
               return (
                 <button
