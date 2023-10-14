@@ -11,6 +11,7 @@ import ScrollToTop from "@/components/layout/scroll-to-top";
 import Footer from "@/components/layout/footer";
 import { languages } from "@/i18n/settings";
 import { Providers } from "./providers";
+import Particles from "./particles";
 
 const Header = dynamic(() => import("@/components/layout/header"), {
   ssr: false,
@@ -50,7 +51,7 @@ export default async function RootLayout({
       <body className={cx(sfPro.variable, inter.variable)}>
         <NextTopLoader height={1} />
         <Providers>
-          <div className="fixed h-full w-full bg-cyan-50 dark:bg-black" />
+          <Particles />
           <Header lng={params.lng} />
           <main
             id="main"
