@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 import NextTopLoader from "nextjs-toploader";
 import { BiArrowToTop } from "react-icons/bi";
 import GoogleAnalytics from "@/components/shared/google-analytics";
-import CookieBanner from "@/components/shared/cookie-banner";
+// import CookieBanner from "@/components/shared/cookie-banner";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import Footer from "@/components/layout/footer";
 import { languages } from "@/i18n/settings";
@@ -27,7 +27,6 @@ export async function generateMetadata({
     title: params.lng === "en" ? "kjxbyz" : "科技小白英仔",
     description: params.lng === "en" ? "KJXBYZ" : "科技小白英仔.",
     metadataBase: new URL("https://kjxbyz.com"),
-    themeColor: "#FFF",
     icons: {
       icon: "/portal/logo.jpg",
     },
