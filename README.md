@@ -1,5 +1,7 @@
 # kjxbyz.github.io
 
+[![CodeFactor](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz.github.io/badge)](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz.github.io)
+
 ## Setup
 
 Make sure to install the dependencies:
