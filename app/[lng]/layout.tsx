@@ -11,6 +11,7 @@ import GoogleAnalytics from "@/components/shared/google-analytics";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import Footer from "@/components/layout/footer";
 import { languages } from "@/i18n/settings";
+import { basePath } from "@/constants";
 import { Providers } from "./providers";
 import Particles from "./particles";
 
@@ -28,7 +29,7 @@ export async function generateMetadata({
     description: params.lng === "en" ? "KJXBYZ" : "科技小白英仔.",
     metadataBase: new URL("https://kjxbyz.com"),
     icons: {
-      icon: "/portal/logo.jpg",
+      icon: `${basePath}/logo.jpg`,
     },
   };
 }
