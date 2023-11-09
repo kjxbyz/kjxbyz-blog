@@ -10,6 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useTranslation } from "@/i18n/client";
+import { basePath } from "@/constants";
 import { allPosts } from "contentlayer/generated";
 
 const DynamicCard = dynamic(() => import("@/components/home/card"), {
@@ -47,7 +48,7 @@ export default function Home({
           <Image
             className="rounded-full"
             alt="logo"
-            src="/portal/logo.jpg"
+            src={`${basePath}/logo.jpg`}
             width={160}
             height={160}
           />
