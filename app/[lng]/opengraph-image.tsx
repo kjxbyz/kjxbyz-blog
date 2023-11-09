@@ -2,7 +2,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Precedent - Building blocks for your Next.js project";
+export const alt = "kjxbyz,科技小白英仔";
 export const contentType = "image/png";
 
 export default async function OG() {
