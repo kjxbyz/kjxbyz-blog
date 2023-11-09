@@ -7,6 +7,7 @@ import LngDropdown from "./lng-dropdown";
 import ThemeDropdown from "./theme-dropdown";
 import { LngProps } from "@/i18next-lng";
 import { useTranslation } from "@/i18n/client";
+import { basePath } from "@/constants";
 
 export default function Header(props: LngProps) {
   const { t } = useTranslation(props.lng, "header");
@@ -32,7 +33,7 @@ export default function Header(props: LngProps) {
           className="flex items-center font-display text-2xl"
         >
           <Image
-            src="/portal/logo.jpg"
+            src={`${basePath}/logo.jpg`}
             alt="logo"
             width="30"
             height="30"

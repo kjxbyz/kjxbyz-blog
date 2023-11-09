@@ -1,9 +1,10 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
 import PostItem from "@/components/post/post-item";
 import LatestPosts from "@/components/post/latest-posts";
+import { basePath } from "@/constants";
 // import Topics from "@/components/post/topics";
-import { Metadata } from "next";
 
 export async function generateMetadata({
   params,
@@ -15,7 +16,7 @@ export async function generateMetadata({
     description: params.lng === "en" ? "Blog - KJXBYZ" : "博客 - 科技小白英仔.",
     metadataBase: new URL("https://kjxbyz.com"),
     icons: {
-      icon: "/portal/logo.jpg",
+      icon: `${basePath}/logo.jpg`,
     },
   };
 }
