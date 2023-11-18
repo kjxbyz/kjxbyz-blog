@@ -12,17 +12,17 @@ export default function Footer(props: LngProps) {
 
   return (
     <div className="absolute w-full py-5 text-center">
-      <p className="text-gray-500 dark:text-white/80">
-        {t("footer")}{" "}
-        <a
-          className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
-          href="https://github.com/kjxbyz/kjxbyz.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      </p>
+      {/*<p className="text-gray-500 dark:text-white/80">*/}
+      {/*  {t("footer")}{" "}*/}
+      {/*  <a*/}
+      {/*    className="font-medium text-gray-800 underline transition-colors dark:text-white/90"*/}
+      {/*    href="https://github.com/kjxbyz/kjxbyz.github.io"*/}
+      {/*    target="_blank"*/}
+      {/*    rel="noopener noreferrer"*/}
+      {/*  >*/}
+      {/*    GitHub*/}
+      {/*  </a>*/}
+      {/*</p>*/}
       <p className="mt-2 flex items-center justify-center">
         <Link
           className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
