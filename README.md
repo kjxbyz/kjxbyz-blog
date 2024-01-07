@@ -1,6 +1,6 @@
-# kjxbyz.github.io
+# kjxbyz-blog
 
-[![CodeFactor](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz.github.io/badge)](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz.github.io)
+[![CodeFactor](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz-blog/badge)](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz-blog)
 
 ## Setup
 
