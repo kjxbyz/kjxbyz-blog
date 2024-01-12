@@ -3,6 +3,8 @@ import { allPosts } from "contentlayer/generated";
 import { host } from "@/constants";
 import { languages } from "@/i18n/settings";
 
+const rssPages = ["/blog"];
+
 export async function GET() {
   const feed = new RSS({
     title: "Blog posts | RSS Feed",
@@ -14,10 +16,15 @@ export async function GET() {
     copyright: `All rights reserved ${new Date().getFullYear()}, @kjxbyz`,
   });
 
+  const rssPageRegex = RegExp(
+    `^(/(${languages.join("|")}))?(${rssPages
+      .flatMap((p) => (p === "/" ? ["", "/"] : p))
+      .join("|")})/?`,
+    "i",
+  );
+
   allPosts
-    .filter((post) =>
-      new RegExp(`^(/(${languages.join("|")}))?/blog/?$`, "i").test(post.slug),
-    )
+    .filter((post) => rssPageRegex.test(`/${post.slug}`))
     .sort((a, b) => {
       return new Date(a.publishedAt) > new Date(b.publishedAt) ? -1 : 1;
     })
@@ -25,6 +32,7 @@ export async function GET() {
       feed.item({
         title: post.title,
         description: post.summary || "",
+        author: post.author,
         url: `${host}/${post.slug}`,
         date: post.publishedAt,
       });
