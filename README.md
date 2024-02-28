@@ -1,7 +1,5 @@
 # kjxbyz-blog
 
-[![CodeFactor](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz-blog/badge)](https://www.codefactor.io/repository/github/kjxbyz/kjxbyz-blog)
-
 ## Setup
 
 Make sure to install the dependencies:
