@@ -1,6 +1,6 @@
 import RSS from "rss";
 import { allPosts } from "contentlayer/generated";
-import { host } from "@/constants";
+import { domain } from "@/constants";
 import { languages } from "@/i18n/settings";
 
 const rssPages = ["/blog"];
@@ -9,9 +9,9 @@ export async function GET() {
   const feed = new RSS({
     title: "Blog posts | RSS Feed",
     description: "Welcome to blog posts!",
-    site_url: host,
-    feed_url: `${host}/rss.xml`,
-    image_url: `${host}/logo.jpg`,
+    site_url: domain,
+    feed_url: `${domain}/rss.xml`,
+    image_url: `${domain}/logo.jpg`,
     pubDate: new Date(),
     copyright: `All rights reserved ${new Date().getFullYear()}, @kjxbyz`,
   });
@@ -33,7 +33,7 @@ export async function GET() {
         title: post.title,
         description: post.summary || "",
         author: post.author,
-        url: `${host}/${post.slug}`,
+        url: `${domain}/${post.slug}`,
         date: post.publishedAt,
       });
     });

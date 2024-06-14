@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaRss } from "react-icons/fa";
-import { host } from "@/constants";
+import { domain } from "@/constants";
 import { useTranslation } from "@/i18n/client";
 import type { LngProps } from "@/types/i18next-lng";
 
@@ -48,7 +48,7 @@ export default function Footer(props: LngProps) {
           {th("title")}
         </a>
         . {t("copyright")}&nbsp;
-        <a href={`${host}/rss.xml`} rel="noreferrer" target="_blank">
+        <a href={`${domain}/rss.xml`} rel="noreferrer" target="_blank">
           <FaRss color="#ee802f" size="20px" />
         </a>
         &nbsp;
