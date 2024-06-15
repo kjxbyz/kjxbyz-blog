@@ -31,7 +31,7 @@ export default function Header(props: LngProps) {
       <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
         <Link
           href={`/${props.lng}`}
-          className="flex items-center font-display text-2xl"
+          className="font-display flex items-center text-2xl"
         >
           <Image
             src={`${basePath}/logo.jpg`}
@@ -47,7 +47,7 @@ export default function Header(props: LngProps) {
           id="navbar-language"
         >
           <ul className="flex flex-col rounded-lg border border-gray-100 p-4 font-medium dark:border-gray-700 max-md:space-y-3 md:mt-0 md:flex-row md:space-x-3 md:border-0 md:p-0">
-            <li className="h-8 w-8 sm:h-9 sm:w-9">
+            {/* <li className="h-8 w-8 sm:h-9 sm:w-9">
               <div className="relative inline-block text-left">
                 <Link
                   target="_blank"
@@ -58,7 +58,7 @@ export default function Header(props: LngProps) {
                   <Github className="h-5 w-5" />
                 </Link>
               </div>
-            </li>
+            </li> */}
             <li className="h-8 w-8 sm:h-9 sm:w-9">
               <LngDropdown lng={props.lng} />
             </li>
