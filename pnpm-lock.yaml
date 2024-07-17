@@ -30,11 +30,11 @@ importers:
         specifier: ^10.2.3
         version: 10.2.3(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       framer-motion:
-        specifier: ^11.3.2
-        version: 11.3.2(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^11.3.5
+        version: 11.3.5(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       i18next:
-        specifier: ^23.11.5
-        version: 23.11.5
+        specifier: ^23.12.1
+        version: 23.12.1
       i18next-browser-languagedetector:
         specifier: ^8.0.0
         version: 8.0.0
@@ -66,8 +66,8 @@ importers:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       react-i18next:
-        specifier: ^14.1.2
-        version: 14.1.2(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^14.1.3
+        version: 14.1.3(i18next@23.12.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-icons:
         specifier: ^5.2.1
         version: 5.2.1(react@18.3.1)
@@ -88,7 +88,7 @@ importers:
         version: 1.2.2
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.4)
+        version: 1.0.7(tailwindcss@3.4.6)
       tsparticles:
         specifier: ^3.5.0
         version: 3.5.0
@@ -98,25 +98,25 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
-        version: 19.3.0(@types/node@18.19.39)(typescript@5.4.5)
+        version: 19.3.0(@types/node@18.19.40)(typescript@5.4.5)
       '@commitlint/config-conventional':
         specifier: ^19.2.2
         version: 19.2.2
       '@tailwindcss/forms':
         specifier: ^0.5.7
-        version: 0.5.7(tailwindcss@3.4.4)
+        version: 0.5.7(tailwindcss@3.4.6)
       '@tailwindcss/line-clamp':
         specifier: ^0.4.4
-        version: 0.4.4(tailwindcss@3.4.4)
+        version: 0.4.4(tailwindcss@3.4.6)
       '@tailwindcss/typography':
         specifier: ^0.5.13
-        version: 0.5.13(tailwindcss@3.4.4)
+        version: 0.5.13(tailwindcss@3.4.6)
       '@types/ms':
         specifier: ^0.7.34
         version: 0.7.34
       '@types/node':
-        specifier: 18.19.39
-        version: 18.19.39
+        specifier: 18.19.40
+        version: 18.19.40
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
@@ -145,11 +145,11 @@ importers:
         specifier: ^8.4.39
         version: 8.4.39
       prettier:
-        specifier: ^3.3.2
-        version: 3.3.2
+        specifier: ^3.3.3
+        version: 3.3.3
       prettier-plugin-tailwindcss:
         specifier: ^0.6.5
-        version: 0.6.5(prettier@3.3.2)
+        version: 0.6.5(prettier@3.3.3)
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -157,8 +157,8 @@ importers:
         specifier: ^2.10.0
         version: 2.10.0
       tailwindcss:
-        specifier: ^3.4.4
-        version: 3.4.4
+        specifier: ^3.4.6
+        version: 3.4.6
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -1918,8 +1918,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@18.19.39':
-    resolution: {integrity: sha512-nPwTRDKUctxw3di5b4TfT3I0sWDiWoPQCZjXhvdkINntwr8lcoVCKsTgnXeRubKIlfnV+eN/HYk6Jb40tbcEAQ==}
+  '@types/node@18.19.40':
+    resolution: {integrity: sha512-MIxieZHrm4Ee8XArBIc+Or9HINt2StOmCbgRcXGSJl8q14svRvkZPe7LJq9HKtTI1SK3wU8b91TjntUm7T69Pg==}
 
   '@types/parse5@6.0.3':
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
@@ -2872,8 +2872,8 @@ packages:
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
 
-  framer-motion@11.3.2:
-    resolution: {integrity: sha512-RgjSzrNFZmedWcvmW4MMc84A7UcoY37jocadE3Mbg3o+UMofodfyeNnYD/HR15UhP22/bb5KOebNhYOj4mYkpQ==}
+  framer-motion@11.3.5:
+    resolution: {integrity: sha512-x4rZl+D7EDVGo3Iww6+iunqymvvo2Ih7zsgMiNnhmF4L8zNS4wvSPaay45k0OsFs/fcwdyxn5Kn29u84YzoPGA==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0
@@ -3114,8 +3114,8 @@ packages:
   i18next-resources-to-backend@1.2.1:
     resolution: {integrity: sha512-okHbVA+HZ7n1/76MsfhPqDou0fptl2dAlhRDu2ideXloRRduzHsqDOznJBef+R3DFZnbvWoBW+KxJ7fnFjd6Yw==}
 
-  i18next@23.11.5:
-    resolution: {integrity: sha512-41pvpVbW9rhZPk5xjCX2TPJi2861LEig/YRhUkY+1FQ2IQPS0bKUDYnEqY8XPPbB48h1uIwLnP9iiEfuSl20CA==}
+  i18next@23.12.1:
+    resolution: {integrity: sha512-l4y291ZGRgUhKuqVSiqyuU2DDzxKStlIWSaoNBR4grYmh0X+pRYbFpTMs3CnJ5ECKbOI8sQcJ3PbTUfLgPRaMA==}
 
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
@@ -4181,8 +4181,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.3.2:
-    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4230,8 +4230,8 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
 
-  react-i18next@14.1.2:
-    resolution: {integrity: sha512-FSIcJy6oauJbGEXfhUgVeLzvWBhIBIS+/9c6Lj4niwKZyGaGb4V4vUbATXSlsHJDXXB+ociNxqFNiFuV1gmoqg==}
+  react-i18next@14.1.3:
+    resolution: {integrity: sha512-wZnpfunU6UIAiJ+bxwOiTmBOAaB14ha97MjOEnLGac2RJ+h/maIYXZuTHlmyqQVX1UVHmU1YDTQ5vxLmwfXTjw==}
     peerDependencies:
       i18next: '>= 23.2.3'
       react: '>= 16.8.0'
@@ -4711,8 +4711,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
-  tailwindcss@3.4.4:
-    resolution: {integrity: sha512-ZoyXOdJjISB7/BcLTR6SEsLgKtDStYyYZVLsUtWChO4Ps20CBad7lfJKVDiejocV4ME1hLmyY0WJE3hSDcmQ2A==}
+  tailwindcss@3.4.6:
+    resolution: {integrity: sha512-1uRHzPB+Vzu57ocybfZ4jh5Q3SdlH7XW23J5sQoM9LhE9eIOlzxer/3XPSsycvih3rboRsvt0QCmzSrqyOYUIA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -5071,11 +5071,11 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.0
 
-  '@commitlint/cli@19.3.0(@types/node@18.19.39)(typescript@5.4.5)':
+  '@commitlint/cli@19.3.0(@types/node@18.19.40)(typescript@5.4.5)':
     dependencies:
       '@commitlint/format': 19.3.0
       '@commitlint/lint': 19.2.2
-      '@commitlint/load': 19.2.0(@types/node@18.19.39)(typescript@5.4.5)
+      '@commitlint/load': 19.2.0(@types/node@18.19.40)(typescript@5.4.5)
       '@commitlint/read': 19.2.1
       '@commitlint/types': 19.0.3
       execa: 8.0.1
@@ -5122,7 +5122,7 @@ snapshots:
       '@commitlint/rules': 19.0.3
       '@commitlint/types': 19.0.3
 
-  '@commitlint/load@19.2.0(@types/node@18.19.39)(typescript@5.4.5)':
+  '@commitlint/load@19.2.0(@types/node@18.19.40)(typescript@5.4.5)':
     dependencies:
       '@commitlint/config-validator': 19.0.3
       '@commitlint/execute-rule': 19.0.0
@@ -5130,7 +5130,7 @@ snapshots:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.4.5)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.39)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.40)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -5441,7 +5441,7 @@ snapshots:
   '@grpc/grpc-js@1.9.7':
     dependencies:
       '@grpc/proto-loader': 0.7.10
-      '@types/node': 18.19.39
+      '@types/node': 18.19.40
 
   '@grpc/proto-loader@0.7.10':
     dependencies:
@@ -6683,22 +6683,22 @@ snapshots:
       '@swc/counter': 0.1.3
       tslib: 2.6.2
 
-  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.4)':
+  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.6)':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.4
+      tailwindcss: 3.4.6
 
-  '@tailwindcss/line-clamp@0.4.4(tailwindcss@3.4.4)':
+  '@tailwindcss/line-clamp@0.4.4(tailwindcss@3.4.6)':
     dependencies:
-      tailwindcss: 3.4.4
+      tailwindcss: 3.4.6
 
-  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.4)':
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.6)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.4
+      tailwindcss: 3.4.6
 
   '@tanstack/react-table@8.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -6934,7 +6934,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 18.19.39
+      '@types/node': 18.19.40
 
   '@types/d3-array@3.2.1': {}
 
@@ -6992,7 +6992,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@18.19.39':
+  '@types/node@18.19.40':
     dependencies:
       undici-types: 5.26.5
 
@@ -7471,9 +7471,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.39)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.40)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
     dependencies:
-      '@types/node': 18.19.39
+      '@types/node': 18.19.40
       cosmiconfig: 9.0.0(typescript@5.4.5)
       jiti: 1.21.0
       typescript: 5.4.5
@@ -7789,7 +7789,7 @@ snapshots:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.7.1(eslint@8.57.0)
       eslint-plugin-react: 7.33.2(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.57.0)
@@ -7813,7 +7813,7 @@ snapshots:
       enhanced-resolve: 5.15.0
       eslint: 8.57.0
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
       is-core-module: 2.13.1
@@ -7835,7 +7835,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0):
+  eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     dependencies:
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3
@@ -8122,7 +8122,7 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  framer-motion@11.3.2(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  framer-motion@11.3.5(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       tslib: 2.6.2
     optionalDependencies:
@@ -8423,7 +8423,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.23.9
 
-  i18next@23.11.5:
+  i18next@23.12.1:
     dependencies:
       '@babel/runtime': 7.23.9
 
@@ -9392,7 +9392,7 @@ snapshots:
       embla-carousel-autoplay: 8.0.0-rc15(embla-carousel@8.0.0-rc15)
       embla-carousel-react: 8.0.0-rc15(react@18.3.1)
       esbuild: 0.17.19
-      framer-motion: 11.3.2(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      framer-motion: 11.3.5(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       geist: 1.3.0(next@14.3.0-canary.43(@opentelemetry/api@1.6.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       input-otp: 1.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       jotai: 2.7.2(@types/react@18.3.3)(react@18.3.1)
@@ -9788,11 +9788,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.6.5(prettier@3.3.2):
+  prettier-plugin-tailwindcss@0.6.5(prettier@3.3.3):
     dependencies:
-      prettier: 3.3.2
+      prettier: 3.3.3
 
-  prettier@3.3.2: {}
+  prettier@3.3.3: {}
 
   prop-types@15.8.1:
     dependencies:
@@ -9814,7 +9814,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.19.39
+      '@types/node': 18.19.40
       long: 5.2.3
 
   pump@3.0.0:
@@ -9850,11 +9850,11 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  react-i18next@14.1.2(i18next@23.11.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-i18next@14.1.3(i18next@23.12.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.23.9
       html-parse-stringify: 3.0.1
-      i18next: 23.11.5
+      i18next: 23.12.1
       react: 18.3.1
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
@@ -10426,11 +10426,11 @@ snapshots:
 
   tailwind-merge@1.14.0: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@3.4.4):
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.6):
     dependencies:
-      tailwindcss: 3.4.4
+      tailwindcss: 3.4.6
 
-  tailwindcss@3.4.4:
+  tailwindcss@3.4.6:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -10445,7 +10445,7 @@ snapshots:
       micromatch: 4.0.7
       normalize-path: 3.0.0
       object-hash: 3.0.0
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       postcss: 8.4.39
       postcss-import: 15.1.0(postcss@8.4.39)
       postcss-js: 4.0.1(postcss@8.4.39)
