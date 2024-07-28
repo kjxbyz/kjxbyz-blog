@@ -15,7 +15,7 @@ pnpm install
 yarn install
 ```
 
-## Development Server
+## Development
 
 Start the development server on `http://localhost:3000`:
 
@@ -31,8 +31,6 @@ yarn dev
 ```
 
 ## Production
-
-The production server runs at [https://kjxbyz.com/portal](https://kjxbyz.com/portal)
 
 Build the application for production:
 
@@ -59,4 +57,3 @@ pnpm run preview
 # yarn
 yarn preview
 ```
-
