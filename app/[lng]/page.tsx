@@ -2,10 +2,8 @@
 import { useCallback } from "react";
 import Balancer from "react-wrap-balancer";
 import { RoughNotation } from "react-rough-notation";
-import { SiViber, SiNextdotjs, SiNuxtdotjs, SiReact } from "react-icons/si";
-import { FiMusic, FiVideo } from "react-icons/fi";
+import { SiNextdotjs, SiNuxtdotjs, SiReact } from "react-icons/si";
 import { RiImageEditLine } from "react-icons/ri";
-import { AiOutlineAudio } from "react-icons/ai";
 import { FaBlog } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -136,40 +134,6 @@ const apps = [
       <RiImageEditLine className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
     ),
     url: "https://kjxbyz.com/picguard",
-    large: false,
-  },
-  {
-    title: "YTMusic",
-    description: "An unofficial YouTube music desktop client.",
-    demo: (
-      <FiMusic className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://kjxbyz.com/ytmusic",
-    large: false,
-  },
-  {
-    title: "Viber",
-    description: "A social application that supports web, desktop and mobile.",
-    demo: (
-      <SiViber className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://kjxbyz.com/viber",
-  },
-  {
-    title: "DS Audio",
-    description: "A music application for managing music on Synology NAS.",
-    demo: (
-      <AiOutlineAudio className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://kjxbyz.com/dsaudio",
-  },
-  {
-    title: "DS Video",
-    description: "A video application for managing videos on Synology NAS.",
-    demo: (
-      <FiVideo className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://kjxbyz.com/dsvideo",
     large: false,
   },
 ];
