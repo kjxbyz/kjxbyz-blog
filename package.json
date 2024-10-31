@@ -15,7 +15,7 @@
     "@tsparticles/react": "^3.0.0",
     "accept-language": "^3.0.20",
     "classnames": "^2.5.1",
-    "contentlayer2": "^0.5.1",
+    "contentlayer2": "^0.5.3",
     "date-fns": "^4.1.0",
     "focus-trap-react": "^10.3.0",
     "framer-motion": "^11.11.9",
