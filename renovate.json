@@ -8,6 +8,18 @@
     {
       "allowedVersions": "18",
       "matchPackageNames": ["@types/node"]
+    },
+    {
+      "allowedVersions": "14",
+      "matchPackageNames": ["next", "eslint-config-next"]
+    },
+    {
+      "allowedVersions": "8",
+      "matchPackageNames": ["eslint"]
+    },
+    {
+      "matchPackagePatterns": ["contentlayer2", "next-contentlayer2"],
+      "groupName": "contentlayer2"
     }
   ]
 }
