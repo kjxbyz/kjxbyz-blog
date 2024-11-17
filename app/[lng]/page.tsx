@@ -7,15 +7,11 @@ import { RiImageEditLine } from "react-icons/ri";
 import { FaBlog } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
-import dynamic from "next/dynamic";
+import Card from "@/components/home/card";
 import { Github } from "@/components/shared/icons";
 import { useTranslation } from "@/i18n/client";
 import { basePath } from "@/constants";
 import { allPosts } from "contentlayer/generated";
-
-const DynamicCard = dynamic(() => import("@/components/home/card"), {
-  ssr: false,
-});
 
 export default function Home({
   params,
@@ -42,7 +38,7 @@ export default function Home({
           </div>
           <div className="mt-6 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {links.map(({ title, description, demo, url }) => (
-              <DynamicCard
+              <Card
                 key={title}
                 title={title}
                 description={description}
@@ -98,9 +94,8 @@ export default function Home({
               animationDelay={1000}
               animationDuration={2500}
             >
-              人见人爱, 花见花开
+              人见人爱, 花见花开.
             </RoughNotation>
-            .
           </Balancer>
         </p>
         <div
@@ -120,8 +115,8 @@ export default function Home({
           </a>
         </div>
       </div>
-      <Section title={t("app")} links={apps} />
       <Section title={t("starter")} links={starters} />
+      <Section title={t("app")} links={apps} />
     </>
   );
 }
