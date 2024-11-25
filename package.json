@@ -11,7 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@tsparticles/engine": "^3.6.0",
+    "@tsparticles/engine": "^3.7.1",
     "@tsparticles/react": "^3.0.0",
     "accept-language": "^3.0.20",
     "classnames": "^2.5.1",
@@ -38,7 +38,7 @@
     "rehype-slug": "^6.0.0",
     "rss": "^1.2.2",
     "tailwindcss-animate": "^1.0.7",
-    "tsparticles": "^3.6.0",
+    "tsparticles": "^3.7.1",
     "use-debounce": "^10.0.4"
   },
   "devDependencies": {
