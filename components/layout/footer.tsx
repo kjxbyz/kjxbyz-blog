@@ -7,6 +7,8 @@ import { domain } from "@/constants";
 import { useTranslation } from "@/i18n/client";
 import type { LngProps } from "@/types/i18next-lng";
 
+const VERCEL_GIT_COMMIT_SHA = process.env.VERCEL_GIT_COMMIT_SHA;
+
 export default function Footer(props: LngProps) {
   const { t } = useTranslation(props.lng, "footer");
   const { t: th } = useTranslation(props.lng, "header");
@@ -43,28 +45,21 @@ export default function Footer(props: LngProps) {
         </Link>
       </p>
       <span className="mt-2 flex flex-wrap items-center justify-center text-sm text-gray-500 dark:text-gray-400 sm:text-center">
-        © {`2023${fullYear === 2023 ? "" : `-${fullYear}`}`}&nbsp;
+        &copy;&nbsp;{`2023${fullYear === 2023 ? "" : `-${fullYear}`}`}&nbsp;
         <a href="https://www.kjxbyz.com" className="hover:underline">
           {th("title")}
         </a>
-        . {t("copyright")}&nbsp;
+        .&nbsp;{t("copyright")}&nbsp;
         <a href={`${domain}/rss.xml`} rel="noreferrer" target="_blank">
           <FaRss color="#ee802f" size="20px" />
         </a>
         &nbsp;
-        {process.env.VERCEL_GIT_COMMIT_SHA && (
-          <p className="flex items-center justify-center">
-            <a
-              href={`https://github.com/kjxbyz/kjxbyz-blog/commit/${process.env.VERCEL_GIT_COMMIT_SHA}`}
-              target="_blank"
-              className="hover:underline"
-              rel="noreferrer"
-            >
-              {process.env.VERCEL_GIT_COMMIT_SHA.substring(0, 8)}
-            </a>
-          </p>
+        {VERCEL_GIT_COMMIT_SHA && (
+          <>
+            {VERCEL_GIT_COMMIT_SHA.substring(0, 8)}
+            &nbsp;
+          </>
         )}
-        &nbsp;
         <Image
           src="https://visitor-badge.laobi.icu/badge?page_id=kjxbyz.com"
           width={60}
