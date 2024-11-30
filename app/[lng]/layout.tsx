@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import NextTopLoader from "nextjs-toploader";
 import { BiArrowToTop } from "react-icons/bi";
-import CookieBanner from "@/components/shared/cookie-banner";
+import CookieYes from "@/components/shared/cookie-yes";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import Footer from "@/components/layout/footer";
 import { languages } from "@/i18n/settings";
@@ -74,7 +74,6 @@ export default async function RootLayout({
             {children}
           </main>
           <Footer lng={params.lng} />
-          <CookieBanner lng={params.lng} />
         </Providers>
         <ScrollToTop
           smooth
@@ -83,6 +82,7 @@ export default async function RootLayout({
           }
         />
       </body>
+      <CookieYes lng={params.lng} />
       {GA_TRACKING_ID && <GoogleAnalytics gaId={GA_TRACKING_ID} />}
     </html>
   );
