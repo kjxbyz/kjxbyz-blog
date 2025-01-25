@@ -52,6 +52,63 @@ export default function Home({
     [],
   );
 
+  const starters = [
+    {
+      title: "Next Starter",
+      description: "Starter for Next.js",
+      demo: (
+        <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+      ),
+      url: "https://www.kjxbyz.com/starter/next",
+      large: false,
+    },
+    {
+      title: "Nuxt Starter",
+      description: "Starter for Nuxt.js",
+      demo: (
+        <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+      ),
+      url: "https://www.kjxbyz.com/starter/nuxt",
+      large: false,
+    },
+    {
+      title: "Next Admin Starter",
+      description: "Admin Starter for Next.js",
+      demo: (
+        <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+      ),
+      url: "https://www.kjxbyz.com/starter/next/admin",
+      large: false,
+    },
+    {
+      title: "Nuxt Admin Starter",
+      description: "Admin Starter for Nuxt.js",
+      demo: (
+        <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+      ),
+      url: "https://www.kjxbyz.com/starter/nuxt/admin",
+      large: false,
+    },
+    {
+      title: "Blog Starter",
+      description: "Blog Starter for React",
+      demo: (
+        <SiReact className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+      ),
+      url: "https://www.kjxbyz.com/starter/blog/react",
+      large: false,
+    },
+    {
+      title: "Websites Starter",
+      description: "Websites Starter for Next.js",
+      demo: (
+        <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
+      ),
+      url: "https://www.kjxbyz.com/starter/websites",
+      large: false,
+    },
+  ];
+
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
@@ -93,7 +150,7 @@ export default function Home({
               animationDelay={1000}
               animationDuration={2500}
             >
-              人见人爱, 花见花开.
+              {t("slogan")}
             </RoughNotation>
           </Balancer>
         </p>
@@ -118,60 +175,3 @@ export default function Home({
     </>
   );
 }
-
-const starters = [
-  {
-    title: "Next Starter",
-    description: "Starter for Next.js",
-    demo: (
-      <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://www.kjxbyz.com/starter/next",
-    large: false,
-  },
-  {
-    title: "Nuxt Starter",
-    description: "Starter for Nuxt.js",
-    demo: (
-      <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://www.kjxbyz.com/starter/nuxt",
-    large: false,
-  },
-  {
-    title: "Next Admin Starter",
-    description: "Admin Starter for Next.js",
-    demo: (
-      <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://www.kjxbyz.com/starter/next/admin",
-    large: false,
-  },
-  {
-    title: "Nuxt Admin Starter",
-    description: "Admin Starter for Nuxt.js",
-    demo: (
-      <SiNuxtdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://www.kjxbyz.com/starter/nuxt/admin",
-    large: false,
-  },
-  {
-    title: "Blog Starter",
-    description: "Blog Starter for React",
-    demo: (
-      <SiReact className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://www.kjxbyz.com/starter/blog/react",
-    large: false,
-  },
-  {
-    title: "Websites Starter",
-    description: "Websites Starter for Next.js",
-    demo: (
-      <SiNextdotjs className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://www.kjxbyz.com/starter/websites",
-    large: false,
-  },
-];
