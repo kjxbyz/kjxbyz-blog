@@ -16,17 +16,6 @@ export default function Footer(props: LngProps) {
 
   return (
     <div className="absolute w-full py-5 text-center">
-      {/*<p className="text-gray-500 dark:text-white/80">*/}
-      {/*  {t("footer")}{" "}*/}
-      {/*  <a*/}
-      {/*    className="font-medium text-gray-800 underline transition-colors dark:text-white/90"*/}
-      {/*    href="https://github.com/kjxbyz/kjxbyz-blog"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    GitHub*/}
-      {/*  </a>*/}
-      {/*</p>*/}
       <p className="mt-2 flex items-center justify-center">
         <Link
           className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
@@ -46,10 +35,7 @@ export default function Footer(props: LngProps) {
       </p>
       <span className="mt-2 flex flex-wrap items-center justify-center text-sm text-gray-500 dark:text-gray-400 sm:text-center">
         &copy;&nbsp;{`2023${fullYear === 2023 ? "" : `-${fullYear}`}`}&nbsp;
-        <a href="https://www.kjxbyz.com" className="hover:underline">
-          {th("title")}
-        </a>
-        .&nbsp;{t("copyright")}&nbsp;
+        {th("title")}.&nbsp;{t("copyright")}&nbsp;
         <a href={`${domain}/rss.xml`} rel="noreferrer" target="_blank">
           <FaRss color="#ee802f" size="20px" />
         </a>
@@ -60,12 +46,6 @@ export default function Footer(props: LngProps) {
             &nbsp;
           </>
         )}
-        <Image
-          src="https://visitor-badge.laobi.icu/badge?page_id=kjxbyz.com"
-          width={60}
-          height={20}
-          alt="visitor badge"
-        />
       </span>
     </div>
   );
