@@ -10,10 +10,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    remotePatterns: [
-      { hostname: "lh3.googleusercontent.com" },
-      { hostname: "visitor-badge.laobi.icu" },
-    ],
+    remotePatterns: [{ hostname: "lh3.googleusercontent.com" }],
     unoptimized: true,
   },
   env: {
