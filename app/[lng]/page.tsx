@@ -3,7 +3,6 @@ import { useCallback } from "react";
 import Balancer from "react-wrap-balancer";
 import { RoughNotation } from "react-rough-notation";
 import { SiNextdotjs, SiNuxtdotjs, SiReact } from "react-icons/si";
-import { RiImageEditLine } from "react-icons/ri";
 import { FaBlog } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -116,22 +115,9 @@ export default function Home({
         </div>
       </div>
       <Section title={t("starter")} links={starters} />
-      <Section title={t("app")} links={apps} />
     </>
   );
 }
-
-const apps = [
-  {
-    title: "PicGuard",
-    description: "Your pictures, your signature.",
-    demo: (
-      <RiImageEditLine className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
-    ),
-    url: "https://picguard.app",
-    large: false,
-  },
-];
 
 const starters = [
   {
