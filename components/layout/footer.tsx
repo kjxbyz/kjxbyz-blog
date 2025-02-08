@@ -7,7 +7,7 @@ import { domain } from "@/constants";
 import { useTranslation } from "@/i18n/client";
 import type { LngProps } from "@/types/i18next-lng";
 
-const VERCEL_GIT_COMMIT_SHA = process.env.VERCEL_GIT_COMMIT_SHA;
+const NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
 
 export default function Footer(props: LngProps) {
   const { t } = useTranslation(props.lng, "footer");
@@ -40,9 +40,9 @@ export default function Footer(props: LngProps) {
           <FaRss color="#ee802f" size="20px" />
         </a>
         &nbsp;
-        {VERCEL_GIT_COMMIT_SHA && (
+        {NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA && (
           <>
-            {VERCEL_GIT_COMMIT_SHA.substring(0, 8)}
+            {NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA.substring(0, 8)}
             &nbsp;
           </>
         )}
