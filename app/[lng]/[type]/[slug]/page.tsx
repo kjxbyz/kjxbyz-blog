@@ -6,6 +6,7 @@ import Link from "next/link";
 import PostDate from "@/components/post/post-date";
 import { Mdx } from "@/components/mdx/mdx";
 import PostNav from "@/components/post/post-nav";
+import { basePath, domain } from "@/constants";
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
@@ -29,6 +30,11 @@ export async function generateMetadata({
   return {
     title,
     description,
+    metadataBase: new URL(domain),
+    icons: {
+      icon: `${basePath}/logo.jpg`,
+    },
+    manifest: `${basePath}/manifest.json`,
   };
 }
 

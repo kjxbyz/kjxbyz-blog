@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     remotePatterns: [{ hostname: "lh3.googleusercontent.com" }],
     unoptimized: true,
-  }
+  },
 };
 
 module.exports = withContentlayer(nextConfig);
