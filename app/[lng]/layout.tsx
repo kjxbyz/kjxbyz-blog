@@ -11,7 +11,7 @@ import CookieYes from "@/components/shared/cookie-yes";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import Footer from "@/components/layout/footer";
 import { languages } from "@/i18n/settings";
-import { basePath } from "@/constants";
+import { basePath, domain } from "@/constants";
 import { Providers } from "./providers";
 import Particles from "./particles";
 
@@ -35,10 +35,11 @@ export async function generateMetadata({
   return {
     title: params.lng === "en" ? "kjxbyz" : "科技小白英仔",
     description: params.lng === "en" ? "KJXBYZ" : "科技小白英仔.",
-    metadataBase: new URL("https://kjxbyz.com"),
+    metadataBase: new URL(domain),
     icons: {
       icon: `${basePath}/logo.jpg`,
     },
+    manifest: `${basePath}/manifest.json`,
   };
 }
 

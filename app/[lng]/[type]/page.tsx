@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
 import PostItem from "@/components/post/post-item";
 import LatestPosts from "@/components/post/latest-posts";
-import { basePath } from "@/constants";
+import { basePath, domain } from "@/constants";
 // import Topics from "@/components/post/topics";
 
 export async function generateMetadata({
@@ -14,10 +14,11 @@ export async function generateMetadata({
   return {
     title: params.lng === "en" ? "Blog" : "博客",
     description: params.lng === "en" ? "Blog - KJXBYZ" : "博客 - 科技小白英仔.",
-    metadataBase: new URL("https://kjxbyz.com"),
+    metadataBase: new URL(domain),
     icons: {
       icon: `${basePath}/logo.jpg`,
     },
+    manifest: `${basePath}/manifest.json`,
   };
 }
 
