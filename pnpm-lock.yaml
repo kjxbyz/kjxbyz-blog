@@ -39,8 +39,8 @@ importers:
         specifier: ^24.2.2
         version: 24.2.2(typescript@5.7.3)
       i18next-browser-languagedetector:
-        specifier: ^8.0.2
-        version: 8.0.2
+        specifier: ^8.1.0
+        version: 8.1.0
       i18next-resources-to-backend:
         specifier: ^1.2.1
         version: 1.2.1
@@ -194,6 +194,10 @@ packages:
 
   '@babel/runtime@7.25.0':
     resolution: {integrity: sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.27.1':
+    resolution: {integrity: sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog==}
     engines: {node: '>=6.9.0'}
 
   '@commitlint/cli@19.7.1':
@@ -3059,6 +3063,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -3440,8 +3445,8 @@ packages:
     resolution: {integrity: sha512-Y93lCzHYgGWdrJ66yIktxiaGULYc6oGiABxhcO5AufBeOyoIdZF7bIfLaOrbM0iGIOXQQgxxRrFEnb+Y6w1n4A==}
     engines: {node: '>=10.18'}
 
-  i18next-browser-languagedetector@8.0.2:
-    resolution: {integrity: sha512-shBvPmnIyZeD2VU5jVGIOWP7u9qNG3Lj7mpaiPFpbJ3LVfHZJvVzKR4v1Cb91wAOFpNw442N+LGPzHOHsten2g==}
+  i18next-browser-languagedetector@8.1.0:
+    resolution: {integrity: sha512-mHZxNx1Lq09xt5kCauZ/4bsXOEA2pfpwSoU11/QTJB+pD94iONFwp+ohqi///PwiFvjFOxe1akYCdHyFo1ng5Q==}
 
   i18next-resources-to-backend@1.2.1:
     resolution: {integrity: sha512-okHbVA+HZ7n1/76MsfhPqDou0fptl2dAlhRDu2ideXloRRduzHsqDOznJBef+R3DFZnbvWoBW+KxJ7fnFjd6Yw==}
@@ -5236,6 +5241,8 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.0
 
+  '@babel/runtime@7.27.1': {}
+
   '@commitlint/cli@19.7.1(@types/node@18.19.75)(typescript@5.7.3)':
     dependencies:
       '@commitlint/format': 19.5.0
@@ -6214,21 +6221,21 @@ snapshots:
 
   '@radix-ui/number@1.0.1':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
 
   '@radix-ui/primitive@1.0.0':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
 
   '@radix-ui/primitive@1.0.1':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
 
   '@radix-ui/primitive@1.1.0': {}
 
   '@radix-ui/react-accessible-icon@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-visually-hidden': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6238,7 +6245,7 @@ snapshots:
 
   '@radix-ui/react-accordion@1.1.2(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collapsible': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6256,7 +6263,7 @@ snapshots:
 
   '@radix-ui/react-alert-dialog@1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6271,7 +6278,7 @@ snapshots:
 
   '@radix-ui/react-arrow@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6281,7 +6288,7 @@ snapshots:
 
   '@radix-ui/react-aspect-ratio@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6291,7 +6298,7 @@ snapshots:
 
   '@radix-ui/react-avatar@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6304,7 +6311,7 @@ snapshots:
 
   '@radix-ui/react-checkbox@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6321,7 +6328,7 @@ snapshots:
 
   '@radix-ui/react-collapsible@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6338,7 +6345,7 @@ snapshots:
 
   '@radix-ui/react-collection@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6351,12 +6358,12 @@ snapshots:
 
   '@radix-ui/react-compose-refs@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
 
   '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.18
@@ -6369,7 +6376,7 @@ snapshots:
 
   '@radix-ui/react-context-menu@2.1.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-menu': 2.0.6(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6384,12 +6391,12 @@ snapshots:
 
   '@radix-ui/react-context@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
 
   '@radix-ui/react-context@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.18
@@ -6402,7 +6409,7 @@ snapshots:
 
   '@radix-ui/react-dialog@1.0.0(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.0
       '@radix-ui/react-compose-refs': 1.0.0(react@18.3.1)
       '@radix-ui/react-context': 1.0.0(react@18.3.1)
@@ -6424,7 +6431,7 @@ snapshots:
 
   '@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6469,14 +6476,14 @@ snapshots:
 
   '@radix-ui/react-direction@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.18
 
   '@radix-ui/react-dismissable-layer@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.0
       '@radix-ui/react-compose-refs': 1.0.0(react@18.3.1)
       '@radix-ui/react-primitive': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6487,7 +6494,7 @@ snapshots:
 
   '@radix-ui/react-dismissable-layer@1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6514,7 +6521,7 @@ snapshots:
 
   '@radix-ui/react-dropdown-menu@2.0.6(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6530,12 +6537,12 @@ snapshots:
 
   '@radix-ui/react-focus-guards@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
 
   '@radix-ui/react-focus-guards@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.18
@@ -6548,7 +6555,7 @@ snapshots:
 
   '@radix-ui/react-focus-scope@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-compose-refs': 1.0.0(react@18.3.1)
       '@radix-ui/react-primitive': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-use-callback-ref': 1.0.0(react@18.3.1)
@@ -6557,7 +6564,7 @@ snapshots:
 
   '@radix-ui/react-focus-scope@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6580,7 +6587,7 @@ snapshots:
 
   '@radix-ui/react-hover-card@1.0.7(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6602,13 +6609,13 @@ snapshots:
 
   '@radix-ui/react-id@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-use-layout-effect': 1.0.0(react@18.3.1)
       react: 18.3.1
 
   '@radix-ui/react-id@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
@@ -6623,7 +6630,7 @@ snapshots:
 
   '@radix-ui/react-label@2.0.2(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6633,7 +6640,7 @@ snapshots:
 
   '@radix-ui/react-menu@2.0.6(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6660,7 +6667,7 @@ snapshots:
 
   '@radix-ui/react-menubar@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6679,7 +6686,7 @@ snapshots:
 
   '@radix-ui/react-navigation-menu@1.1.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6702,7 +6709,7 @@ snapshots:
 
   '@radix-ui/react-popover@1.0.7(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6726,7 +6733,7 @@ snapshots:
 
   '@radix-ui/react-popper@1.1.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@floating-ui/react-dom': 2.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-arrow': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6745,14 +6752,14 @@ snapshots:
 
   '@radix-ui/react-portal@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-primitive': 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
   '@radix-ui/react-portal@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6772,7 +6779,7 @@ snapshots:
 
   '@radix-ui/react-presence@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-compose-refs': 1.0.0(react@18.3.1)
       '@radix-ui/react-use-layout-effect': 1.0.0(react@18.3.1)
       react: 18.3.1
@@ -6780,7 +6787,7 @@ snapshots:
 
   '@radix-ui/react-presence@1.0.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       react: 18.3.1
@@ -6801,14 +6808,14 @@ snapshots:
 
   '@radix-ui/react-primitive@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-slot': 1.0.0(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
   '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-slot': 1.0.2(@types/react@18.3.18)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6827,7 +6834,7 @@ snapshots:
 
   '@radix-ui/react-progress@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
@@ -6838,7 +6845,7 @@ snapshots:
 
   '@radix-ui/react-radio-group@1.1.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6857,7 +6864,7 @@ snapshots:
 
   '@radix-ui/react-roving-focus@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6875,7 +6882,7 @@ snapshots:
 
   '@radix-ui/react-scroll-area@1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/number': 1.0.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6893,7 +6900,7 @@ snapshots:
 
   '@radix-ui/react-select@2.0.0(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/number': 1.0.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6923,7 +6930,7 @@ snapshots:
 
   '@radix-ui/react-separator@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6933,7 +6940,7 @@ snapshots:
 
   '@radix-ui/react-slider@1.1.2(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/number': 1.0.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6953,13 +6960,13 @@ snapshots:
 
   '@radix-ui/react-slot@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-compose-refs': 1.0.0(react@18.3.1)
       react: 18.3.1
 
   '@radix-ui/react-slot@1.0.2(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
@@ -6974,7 +6981,7 @@ snapshots:
 
   '@radix-ui/react-switch@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -6990,7 +6997,7 @@ snapshots:
 
   '@radix-ui/react-tabs@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-direction': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -7007,7 +7014,7 @@ snapshots:
 
   '@radix-ui/react-toast@1.1.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -7028,7 +7035,7 @@ snapshots:
 
   '@radix-ui/react-toggle-group@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-direction': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -7044,7 +7051,7 @@ snapshots:
 
   '@radix-ui/react-toggle@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -7056,7 +7063,7 @@ snapshots:
 
   '@radix-ui/react-tooltip@1.0.7(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
@@ -7077,12 +7084,12 @@ snapshots:
 
   '@radix-ui/react-use-callback-ref@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
 
   '@radix-ui/react-use-callback-ref@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.18
@@ -7095,13 +7102,13 @@ snapshots:
 
   '@radix-ui/react-use-controllable-state@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-use-callback-ref': 1.0.0(react@18.3.1)
       react: 18.3.1
 
   '@radix-ui/react-use-controllable-state@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
@@ -7116,13 +7123,13 @@ snapshots:
 
   '@radix-ui/react-use-escape-keydown@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-use-callback-ref': 1.0.0(react@18.3.1)
       react: 18.3.1
 
   '@radix-ui/react-use-escape-keydown@1.0.3(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
@@ -7137,12 +7144,12 @@ snapshots:
 
   '@radix-ui/react-use-layout-effect@1.0.0(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
 
   '@radix-ui/react-use-layout-effect@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.18
@@ -7155,14 +7162,14 @@ snapshots:
 
   '@radix-ui/react-use-previous@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.18
 
   '@radix-ui/react-use-rect@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/rect': 1.0.1
       react: 18.3.1
     optionalDependencies:
@@ -7170,7 +7177,7 @@ snapshots:
 
   '@radix-ui/react-use-size@1.0.1(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
@@ -7178,7 +7185,7 @@ snapshots:
 
   '@radix-ui/react-visually-hidden@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -7188,7 +7195,7 @@ snapshots:
 
   '@radix-ui/rect@1.0.1':
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
 
   '@resvg/resvg-wasm@2.0.0-alpha.4': {}
 
@@ -8142,7 +8149,7 @@ snapshots:
 
   date-fns@2.30.0:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
 
   date-fns@4.1.0: {}
 
@@ -8210,7 +8217,7 @@ snapshots:
 
   dom-helpers@5.2.1:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       csstype: 3.1.2
 
   dot-prop@5.3.0:
@@ -8450,7 +8457,7 @@ snapshots:
 
   eslint-plugin-jsx-a11y@6.7.1(eslint@8.57.1):
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       aria-query: 5.3.0
       array-includes: 3.1.7
       array.prototype.flatmap: 1.3.2
@@ -8987,9 +8994,9 @@ snapshots:
 
   hyperdyperid@1.2.0: {}
 
-  i18next-browser-languagedetector@8.0.2:
+  i18next-browser-languagedetector@8.1.0:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
 
   i18next-resources-to-backend@1.2.1:
     dependencies:
@@ -9461,7 +9468,7 @@ snapshots:
 
   mdx-bundler@10.0.2(esbuild@0.17.19):
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       '@esbuild-plugins/node-resolve': 0.2.2(esbuild@0.17.19)
       '@fal-works/esbuild-plugin-global-externals': 2.1.2
       '@mdx-js/esbuild': 3.0.1(esbuild@0.17.19)
@@ -10328,7 +10335,7 @@ snapshots:
 
   react-transition-group@4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.27.1
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
