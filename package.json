@@ -1,6 +1,5 @@
 {
   "name": "kjxbyz-blog",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -68,6 +67,6 @@
   },
   "packageManager": "pnpm@10.2.1",
   "engines": {
-    "node": "^18"
+    "node": ">=18"
   }
 }

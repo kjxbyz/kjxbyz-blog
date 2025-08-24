@@ -32,7 +32,7 @@ export async function generateMetadata({
     description,
     metadataBase: new URL(domain),
     icons: {
-      icon: `${basePath}/logo.jpg`,
+      icon: `${basePath}/logo.png`,
     },
     manifest: `${basePath}/manifest.json`,
   };

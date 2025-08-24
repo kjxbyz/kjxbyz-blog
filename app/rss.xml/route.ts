@@ -11,7 +11,7 @@ export async function GET() {
     description: "Welcome to blog posts!",
     site_url: domain,
     feed_url: `${domain}/rss.xml`,
-    image_url: `${domain}/logo.jpg`,
+    image_url: `${domain}/logo.png`,
     pubDate: new Date(),
     copyright: `All rights reserved ${new Date().getFullYear()}, @kjxbyz`,
   });

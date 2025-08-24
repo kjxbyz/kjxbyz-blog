@@ -34,7 +34,7 @@ export default function Header(props: LngProps) {
           className="font-display flex items-center text-2xl"
         >
           <Image
-            src={`${basePath}/logo.jpg`}
+            src={`${basePath}/logo.png`}
             alt="logo"
             width="30"
             height="30"

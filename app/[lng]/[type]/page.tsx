@@ -16,7 +16,7 @@ export async function generateMetadata({
     description: params.lng === "en" ? "Blog - KJXBYZ" : "博客 - 科技小白英仔.",
     metadataBase: new URL(domain),
     icons: {
-      icon: `${basePath}/logo.jpg`,
+      icon: `${basePath}/logo.png`,
     },
     manifest: `${basePath}/manifest.json`,
   };

@@ -21,7 +21,7 @@ export const manifest = {
   theme_color: "#fff",
   icons: [
     {
-      src: `${domain}/logo.jpg`,
+      src: `${domain}/logo.png`,
       sizes: "any",
       type: "image/jpg",
     },
