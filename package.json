@@ -48,7 +48,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.16",
     "@types/ms": "^2.1.0",
-    "@types/node": "18.19.123",
+    "@types/node": "18.19.125",
     "@types/react": "18.3.24",
     "@types/react-dom": "18.3.7",
     "@types/rss": "^0.0.32",
